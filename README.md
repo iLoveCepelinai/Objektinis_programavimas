@@ -1,6 +1,9 @@
 # Objektinis programavimas (Namų darbas)
 Matas Amšiejus
-## Nuorodos į namų darbo dalis:
+## Nuorodos:
+*Į projektus:*
+* [Projektas](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases)
+*Į namų darbo šakas:*
 * [Programa v0.1](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.1)
 
 ## Taip pat naudinga:
