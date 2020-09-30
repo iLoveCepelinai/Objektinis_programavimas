@@ -9,5 +9,7 @@ Matas Amšiejus
 
 ## Taip pat naudinga:
 ***Paaiškinimas dėl v0.11 versijos įkėlimo datos ir formato projekto (tag v0.1) aprašyme***
+
 ***Paaiškinimas dėl v0.14 versijos (masyvai) kodėl meta error'ą neegzistuoja. Tačiau kodas veikia***
+
 :-)
