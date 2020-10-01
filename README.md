@@ -1,15 +1,5 @@
 # Objektinis programavimas (Namų darbas)
 Matas Amšiejus
-## Nuorodos:
-*Į projektų versijas:*
-* [Projektas](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases)
-
-*Į namų darbo šakas:*
-* [Programa v0.1](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.1)
-
-## Taip pat naudinga:
-***Paaiškinimas dėl v0.11 versijos įkėlimo datos ir formato projekto (tag v0.1) aprašyme***
-
-***Paaiškinimas dėl v0.14 versijos (masyvai) kodėl meta error'ą neegzistuoja. Tačiau kodas veikia***
-
+Ši dalis yra jau daryta nuo pradžių su vektorių ir duomenų skaitymu iš failų idėja. Dėl to kodas gana aiškus (palyginus su bet kokia v0.1). Bet, dėl failų skaitymo, programos kodas gana radikaliai keičiasi, ši programa turi labai nedaug bendro su v0.1 ar, konkrečiai v0.145, nebent kelis kintamuosius. Programa parašyta per vieną kartą, todėl yra tik vienas tag ar, kitaip tariant, viena versija.
+Pastaba! Atlikta labai nedaug (praktiškai jokio) klaidų tikrinimo. Gal ateityje pridėsiu.
 :-)
