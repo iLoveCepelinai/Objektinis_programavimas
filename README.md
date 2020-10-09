@@ -1,16 +1,7 @@
-# Objektinis programavimas (Namų darbas)
+# Programos versija 0.3
 Matas Amšiejus
-## Nuorodos:
-*Į projektų versijas:*
-* [Projektas](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases)
 
-*Į namų darbo šakas:*
-* [Programa v0.1](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.1)
-* [Programa v0.2](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.2)
-
-## Taip pat naudinga:
-***Paaiškinimas dėl v0.11 versijos įkėlimo datos ir formato projekto (tag v0.1) aprašyme***
-
-***Paaiškinimas dėl v0.14 versijos (masyvai) kodėl meta error'ą neegzistuoja. Tačiau kodas veikia***
+## versija 0.31
+Kol kas tik pati pradžia, nieko ypatingo. Padariau, kad veiktų su papildomu *header* ir *cpp* failu (pav. ***"03nd_bib"***)
 
 :-)
