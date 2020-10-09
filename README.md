@@ -7,6 +7,7 @@ Matas Amšiejus
 *Į namų darbo šakas:*
 * [Programa v0.1](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.1)
 * [Programa v0.2](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.2)
+* [Programa v0.3](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.3)
 
 ## Taip pat naudinga:
 ***Paaiškinimas dėl v0.11 versijos įkėlimo datos ir formato projekto (tag v0.1) aprašyme***
