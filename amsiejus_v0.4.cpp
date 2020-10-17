@@ -12,25 +12,64 @@ int main()
 
     vector <studentas> grupe, dundukai, sukciukai;
 
-    cout << "Iveskite pagal ka skaiciuosite vidurki (vid/med)" << endl;
-    cin >> pasirinkimas;
+    do {
+        cout << "Iveskite pagal ka skaiciuosite vidurki (vid/med)" << endl;
+        cin >> pasirinkimas;
+        try {
+            if (pasirinkimas != "vid" && pasirinkimas != "med") {
+                throw pasirinkimas;
+            }
+        }
+        catch (string pas) {
+            cout << "Jusu ivestas pasirinkimas " << pas << " neatitinka reikalavimu. Kartokite:\n";
+        }
+    } while (pasirinkimas != "vid" && pasirinkimas != "med");
 
-    //darbas su 1000
-    /*failuKurimas(10, 1000);
-
+    //1000 eiluciu
+    
+    failuKurimas(5, 1000);
+    
     skaitymas("1000.txt", grupe, pasirinkimas);
-
+    
     skirstymas(grupe, dundukai, sukciukai);
     grupe.clear();
 
     surasymas(dundukai, sukciukai, "dundukai1000.txt", "sukciukai1000.txt");
     dundukai.clear();
     sukciukai.clear();
-    */
 
+    system("pause");
+    //10000 eiluciu
 
-    
-    failuKurimas(10, 1000000);
+    failuKurimas(5, 10000);
+
+    skaitymas("10000.txt", grupe, pasirinkimas);
+
+    skirstymas(grupe, dundukai, sukciukai);
+    grupe.clear();
+
+    surasymas(dundukai, sukciukai, "dundukai10000.txt", "sukciukai10000.txt");
+    dundukai.clear();
+    sukciukai.clear();
+
+    system("pause");
+
+    //100000 eiluciu
+    failuKurimas(5, 100000);
+
+    skaitymas("100000.txt", grupe, pasirinkimas);
+
+    skirstymas(grupe, dundukai, sukciukai);
+    grupe.clear();
+
+    surasymas(dundukai, sukciukai, "dundukai100000.txt", "sukciukai100000.txt");
+    dundukai.clear();
+    sukciukai.clear();
+
+    system("pause");
+
+    //1000000 eiluciu
+    failuKurimas(5, 1000000);
     
     skaitymas("1000000.txt", grupe, pasirinkimas);
 
@@ -40,13 +79,21 @@ int main()
     surasymas(dundukai, sukciukai, "dundukai1000000.txt", "sukciukai1000000.txt");
     dundukai.clear();
     sukciukai.clear();
+
+    system("pause");
+
+    //10 000 000 eiluciu
+    failuKurimas(5, 10000000);
     
-    /*
-    failuKurimas(10, 100000);
+    skaitymas("10000000.txt", grupe, pasirinkimas);
 
-    failuKurimas(10, 1000000);
+    skirstymas(grupe, dundukai, sukciukai);
+    grupe.clear();
 
-    failuKurimas(10, 10000000);
-    */
+    surasymas(dundukai, sukciukai, "dundukai10000000.txt", "sukciukai10000000.txt");
+    dundukai.clear();
+    sukciukai.clear();
+
+    system("pause");
     return 0;
 }
