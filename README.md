@@ -6,7 +6,9 @@ Kol kas tik pati pradžia, nieko ypatingo. Padariau, kad veiktų su papildomu *h
 
 ## ikeltų failų paaiškinimas:
 *amsiejus_v0.3.cpp* yra pagrindinis (*main*) kodo failas.
+
 *03nd_bib.cpp* yra funkcijų failas
+
 *03nd_bib.h* yra bibliotekos / *header* failas.
 
 ## pastaba:
