@@ -25,8 +25,10 @@ struct studentas {
 
 void failuKurimas(int, int);
 
-void skaitymas(string, vector <studentas>&, string);
+void skaitymas(int, vector <studentas>&, string);
 
-void skirstymas(vector <studentas>, vector <studentas>&, vector <studentas>&);
+void skirstymas(vector <studentas>&, vector <studentas>&, int);
 
 void surasymas(vector <studentas>, vector <studentas>, string, string);
+
+bool compareByGalut(const studentas&, const studentas&);

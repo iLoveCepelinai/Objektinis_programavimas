@@ -10,7 +10,7 @@ int main()
 {
     string pasirinkimas;
 
-    vector <studentas> grupe, dundukai, sukciukai;
+    vector <studentas> grupe, sukciukai;
 
     do {
         cout << "Iveskite pagal ka skaiciuosite vidurki (vid/med)" << endl;
@@ -29,13 +29,12 @@ int main()
     
     failuKurimas(5, 1000);
     
-    skaitymas("1000.txt", grupe, pasirinkimas);
+    skaitymas(1000, grupe, pasirinkimas);
     
-    skirstymas(grupe, dundukai, sukciukai);
-    grupe.clear();
+    skirstymas(grupe, sukciukai, 1000);
 
-    surasymas(dundukai, sukciukai, "dundukai1000.txt", "sukciukai1000.txt");
-    dundukai.clear();
+    surasymas(grupe, sukciukai, "dundukai1000.txt", "sukciukai1000.txt");
+    grupe.clear();
     sukciukai.clear();
 
     system("pause");
@@ -43,13 +42,12 @@ int main()
 
     failuKurimas(5, 10000);
 
-    skaitymas("10000.txt", grupe, pasirinkimas);
+    skaitymas(10000, grupe, pasirinkimas);
 
-    skirstymas(grupe, dundukai, sukciukai);
+    skirstymas(grupe, sukciukai, 10000);
+
+    surasymas(grupe, sukciukai, "dundukai10000.txt", "sukciukai10000.txt");
     grupe.clear();
-
-    surasymas(dundukai, sukciukai, "dundukai10000.txt", "sukciukai10000.txt");
-    dundukai.clear();
     sukciukai.clear();
 
     system("pause");
@@ -57,27 +55,26 @@ int main()
     //100000 eiluciu
     failuKurimas(5, 100000);
 
-    skaitymas("100000.txt", grupe, pasirinkimas);
+    skaitymas(100000, grupe, pasirinkimas);
 
-    skirstymas(grupe, dundukai, sukciukai);
+    skirstymas(grupe, sukciukai, 100000);
+
+    surasymas(grupe, sukciukai, "dundukai100000.txt", "sukciukai100000.txt");
     grupe.clear();
-
-    surasymas(dundukai, sukciukai, "dundukai100000.txt", "sukciukai100000.txt");
-    dundukai.clear();
     sukciukai.clear();
 
     system("pause");
 
+
     //1000000 eiluciu
     failuKurimas(5, 1000000);
     
-    skaitymas("1000000.txt", grupe, pasirinkimas);
+    skaitymas(1000000, grupe, pasirinkimas);
 
-    skirstymas(grupe, dundukai, sukciukai);
+    skirstymas(grupe, sukciukai, 1000000);
+
+    surasymas(grupe, sukciukai, "dundukai1000000.txt", "sukciukai1000000.txt");
     grupe.clear();
-
-    surasymas(dundukai, sukciukai, "dundukai1000000.txt", "sukciukai1000000.txt");
-    dundukai.clear();
     sukciukai.clear();
 
     system("pause");
@@ -85,15 +82,14 @@ int main()
     //10 000 000 eiluciu
     failuKurimas(5, 10000000);
     
-    skaitymas("10000000.txt", grupe, pasirinkimas);
+    skaitymas(10000000, grupe, pasirinkimas);
 
-    skirstymas(grupe, dundukai, sukciukai);
+    skirstymas(grupe, sukciukai, 10000000);
+
+    surasymas(grupe, sukciukai, "dundukai10000000.txt", "sukciukai10000000.txt");
     grupe.clear();
-
-    surasymas(dundukai, sukciukai, "dundukai10000000.txt", "sukciukai10000000.txt");
-    dundukai.clear();
     sukciukai.clear();
-
+    
     system("pause");
     return 0;
 }

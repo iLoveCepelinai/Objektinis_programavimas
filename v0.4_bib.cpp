@@ -1,9 +1,11 @@
 #include "v04_bib.h";
 
 void failuKurimas(int, int);
-void skaitymas(string, vector <studentas>&, string);
-void skirstymas(vector <studentas>, vector <studentas>&, vector <studentas>&);
+void skaitymas(int, vector <studentas>&, string);
+void skirstymas(vector <studentas>&, vector <studentas>&, int);
 void surasymas(vector <studentas>, vector <studentas>, string, string);
+
+bool compareByGalut(const studentas&, const studentas&);
 
 
 void failuKurimas(int ndkiekis, int studkiekis) {
@@ -46,16 +48,19 @@ void failuKurimas(int ndkiekis, int studkiekis) {
 
 
 
-void skaitymas(string failoPav, vector <studentas> &grupele, string pasirinkimas) {
+void skaitymas(int studkiekis, vector <studentas> &grupele, string pasirinkimas) {
     auto start = std::chrono::high_resolution_clock::now();
         ifstream failas;
         string sVardai, sPavardes, sTemp, egzaminas;
         vector <string> ndMasyv;
         int m;  //namu darbu kiekis
 
+        string failoPav = to_string(studkiekis);
+        failoPav += ".txt";
+
         ndMasyv.reserve(1);
 
-        grupele.reserve(1);
+        grupele.reserve(studkiekis + 2);
 
         try {
             failas.open(failoPav);
@@ -134,25 +139,28 @@ void skaitymas(string failoPav, vector <studentas> &grupele, string pasirinkimas
 }
 
 
-void skirstymas(vector <studentas> grupele, vector <studentas>& dundukai, vector <studentas>& sukciukai) {
+void skirstymas(vector <studentas>& grupele, vector <studentas>& sukciukai, int studKiekis) {
     auto start = std::chrono::high_resolution_clock::now();
-        for (auto& studenciokas : grupele) {
-            if (studenciokas.galut < 5) {
-                dundukai.push_back(studenciokas);
-            }
-            else {
-                sukciukai.push_back(studenciokas);
-            }
+        sort(grupele.begin(), grupele.end(), compareByGalut);   //surusiuojame musu studentu vektoriu
+
+        sukciukai.reserve(studKiekis * 0.6);
+
+        studentas temp = grupele.back();    //laikinas galinis grupele elementas
+        while (temp.galut >= 5) {
+            sukciukai.push_back(temp);      //galini elementa dedame i sukciukus tol, kol >= 5
+            grupele.pop_back();             //naikiname galini elementa is grupele
+            temp = grupele.back();          //naujas temp nes naujas galinis elementas
         }
+    
     std::chrono::duration<double> diff = std::chrono::high_resolution_clock::now() - start;
-    cout << "Skirstymas i 2 vektorius ir  pradinio vektoriaus panaikinimas uztruko: " << diff.count() << "s" << endl;
+    cout << "Rusiavimas ir skirstymas i 2 vektorius uztruko: " << diff.count() << "s" << endl;
 }
 
 
 void surasymas(vector <studentas> dundukai, vector <studentas> sukciukai, string pavDundukai, string pavSukciukai) {
     auto start = std::chrono::high_resolution_clock::now();
         ofstream failD(pavDundukai); // kuriame dunduku faila
-        double ndKiekis = dundukai.at(1).nd.size();    //paimame belenkoki vektoriaus elementa (studenta) ir patikriname kiek jis turi nd
+        int ndKiekis = dundukai.front().nd.size();    //paimame belenkoki vektoriaus elementa (studenta) ir patikriname kiek jis turi nd
 
         failD << setw(20) << "Vardas" << setw(20) << "Pavarde" << "\t";
 
@@ -189,4 +197,11 @@ void surasymas(vector <studentas> dundukai, vector <studentas> sukciukai, string
         failS.close();
     std::chrono::duration<double> diff = std::chrono::high_resolution_clock::now() - start;
     cout << "2 vektoriu surasymas i 2 failus uztruko: " << diff.count() << "s" << endl;
+}
+
+
+/*Pagalbines funkcijos:*/
+
+bool compareByGalut(const studentas& pirmas, const studentas& antras) {
+    return pirmas.galut < antras.galut;
 }
