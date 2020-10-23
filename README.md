@@ -1,7 +1,7 @@
 # V0.4
 ## Nuoroda į galutinę versiją:
 * [Galutinė 0.41](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/v0.41)
-* [Atnaujinta galutinė 0.42]()
+* [Atnaujinta galutinė 0.42](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/v0.42)
 ## Failai:
 * [Main: amsiejus_v0.4.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/amsiejus_v0.4.cpp)
 * [Header: v0.4_bib.h](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/v04_bib.h)
