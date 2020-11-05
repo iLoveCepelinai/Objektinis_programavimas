@@ -1,4 +1,4 @@
-# 0.5 versija
+# v0.5
 List implementacija
 ## Nuorodos į release'us
 * [0.5 release](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/v0.5)
@@ -9,7 +9,9 @@ List implementacija
 **wow nesitikėjau bet pavyko per 1 dieną viską padaryti**
 * Yra viskas, tačiau vėl crashina su 10 000 000 failu (release/debug x86)
 ## Kompiuterio parametrai
-
+* Intel core i7-7700HQ
+* 8 GB RAM DDR4
+* Failas įrašomas/nuskaitomas iš HDD, bet Visual Studio įrašyta į SSD
 ## Laikai
 **Release x86**
 
