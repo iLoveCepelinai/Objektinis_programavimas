@@ -9,8 +9,11 @@ Matas Amšiejus
 * [Programa v0.2](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.2)
 * [Programa v0.3](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.3)
 * [Programa v0.4](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.4)
+* [Programa v0.5](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.5)
 
 ## Taip pat naudinga:
+**Darbas buvo atliekamas naudojant "Visual Studio 2019"**
+
 ***Paaiškinimas dėl v0.11 versijos įkėlimo datos ir formato projekto (tag v0.1) aprašyme***
 
 ***Paaiškinimas dėl v0.14 versijos (masyvai) kodėl meta error'ą neegzistuoja. Tačiau kodas veikia***
