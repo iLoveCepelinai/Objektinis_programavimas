@@ -21,3 +21,6 @@ List implementacija
 **Release x64**
 
 ![Release x64](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.5/list_x64.png?raw=true)
+
+## Išvados
+Palyginus vektorių ir sąrašų spartą (10 000 000, release x64) matome, kad vektoriai viską atlieka sparčiau.
