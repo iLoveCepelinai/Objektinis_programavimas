@@ -12,4 +12,4 @@ List implementacija
 
 ## Laikai
 **Release x86**
-![] (https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.5/list_x86.png)
+![] (https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.5/list_x86.png?raw=true)
