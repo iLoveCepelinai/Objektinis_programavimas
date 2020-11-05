@@ -14,3 +14,7 @@ List implementacija
 **Release x86**
 
 ![Release x86](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.5/list_x86.png?raw=true)
+
+**Release x64**
+
+![Release x64](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.5/list_x64.png?raw=true)
