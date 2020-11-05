@@ -14,11 +14,11 @@
 * Su 10 000 000 eilučių programa užlūžta skaitant failą (jei leidžiama per x86 bitų versiją). Naudojant x64 bitų versiją viskas turėtų veikti
 * Optimizavus programos veiklą dabar ji "lūžta" jau po failo nuskaitymo, t.y. per skirstymą. Vėlgi, su x64 viskas gerai
 ## Laikai
-**vector_x86**
+**release_x86**
 
-![vector_x86](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/vector_x86.png)
+![release_x86](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/vector_x86.png)
 
-**vector_x64**
+**release_x64**
 
-![vector_x64](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/vector_x64.png)
+![release_x64](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/vector_x64.png)
 
