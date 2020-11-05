@@ -12,4 +12,4 @@ List implementacija
 
 ## Laikai
 **Release x86**
-! [] (D:\Users\User\Pictures\OPP\list_x86.png)
+! [] (D:\Users\User\Pictures\OPP)
