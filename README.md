@@ -6,7 +6,8 @@ List implementacija
 **2020 11 05**
 * Failo sukūrimas
 * Duomenų nuskaitymas nuo failo (ir galutinio skaičiavimas)
-**wow nesitikėjau bet pavyko per 1 dieną viską padaryti**
+
+**wow nesitikėjau bet pavyko per 1 dieną viską padaryti (data ta pati)**
 * Yra viskas, tačiau vėl crashina su 10 000 000 failu (release/debug x86)
 ## Kompiuterio parametrai
 * Intel core i7-7700HQ
