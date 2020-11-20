@@ -1,27 +1,24 @@
-# Objektinis programavimas (Namų darbas)
-Matas Amšiejus
+# V0.4
+## Nuoroda į galutinę versiją:
+* [Galutinė 0.41](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/v0.41)
+* [Atnaujinta galutinė 0.42](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/v0.42)
+## Failai:
+* [Main: amsiejus_v0.4.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/amsiejus_v0.4.cpp)
+* [Header: v0.4_bib.h](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/v04_bib.h)
+* [CPP funkcijos: v0.4_bib.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/v0.4_bib.cpp)
+## Kompiuterio parametrai:
+* Intel core i7-7700HQ
+* 8 GB RAM DDR4
+* Failas įrašomas/nuskaitomas iš HDD, bet Visual Studio įrašyta į SSD
+## Papildoma info:
+* Su 10 000 000 eilučių programa užlūžta skaitant failą (jei leidžiama per x86 bitų versiją). Naudojant x64 bitų versiją viskas turėtų veikti
+* Optimizavus programos veiklą dabar ji "lūžta" jau po failo nuskaitymo, t.y. per skirstymą. Vėlgi, su x64 viskas gerai
+## Laikai
+**release_x86**
 
-## Svarbu!!:
-Kadangi kažkodėl klaidingai supratau kaip veikia Github, nuo pat pradžių blogai kėliau failus. Todėl pradėjau redaguoti tik 2020 11 20 (išklausiau pratybų ir supratau, kad pas mane, siunčiantis source code zip failą, atsiunčia klaidingus dalykus). Todėl dabar kursiu 5 naujas šakas (v_0.11-array, v_0.11-vector, v_0.21, ..., v_0.51) tam, kad jūs galėtumėte matyti, kad originalios šakos buvo įkeltos laiku (v_0.1 šaką perdariau nepamąstęs, kad išsitrins įkėlimo laikai. Dėl to tiesiog prašau jūsų pasitikėti, kad ta versija buvo įkelta laiku). Atsiprašau dėl sukeltų nepatogumų ir neaiškumų.
+![release_x86](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/vector_x86.png)
 
-P.S pats kodas niekur nebuvo redagutas kuriant naujas šakas
-## Nuorodos:
-*Į projektų versijas:*
-* [Projektas](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases)
+**release_x64**
 
-*Į namų darbo šakas (naujos):*
-* [Programa v0.11(array)](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.11(array))
+![release_x64](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/vector_x64.png)
 
-*Į namų darbo šakas (senos):*
-* [Programa v0.1](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.1)
-* [Programa v0.2](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.2)
-* [Programa v0.3](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.3)
-* [Programa v0.4](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.4)
-* [Programa v0.5](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.5)
-
-## Taip pat naudinga:
-**Darbas buvo atliekamas naudojant "Visual Studio 2019"**
-
-***Paaiškinimas dėl v0.14 versijos (masyvai) kodėl meta error'ą neegzistuoja. Tačiau kodas veikia***
-
-:-)
