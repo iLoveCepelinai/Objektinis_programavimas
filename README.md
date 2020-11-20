@@ -11,6 +11,11 @@ P.S pats kodas niekur nebuvo redagutas kuriant naujas šakas
 
 *Į namų darbo šakas (naujos):*
 * [Programa v0.11(array)](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.11(array))
+* [Programa v0.11(vector)](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.11(vector))
+* [Programa v0.21](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.21)
+* [Programa v0.31](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.31)
+* [Programa v0.41](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.41)
+* [Programa v0.51](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.51)
 
 *Į namų darbo šakas (senos):*
 * [Programa v0.1](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.1)
@@ -21,7 +26,5 @@ P.S pats kodas niekur nebuvo redagutas kuriant naujas šakas
 
 ## Taip pat naudinga:
 **Darbas buvo atliekamas naudojant "Visual Studio 2019"**
-
-***Paaiškinimas dėl v0.14 versijos (masyvai) kodėl meta error'ą neegzistuoja. Tačiau kodas veikia***
 
 :-)
