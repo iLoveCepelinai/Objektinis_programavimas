@@ -1,4 +1,4 @@
-# v0.5 (atnaujinta)
+# Programos versija 0.5 (atnaujinta)
 List implementacija
 ## Failai:
 * [Main: amsiejus_v0.5.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.51/amsiejus_v0.5/amsiejus_v0.5.cpp)
