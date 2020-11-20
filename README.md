@@ -5,7 +5,7 @@ List implementacija
 * [Header: v0.5_bib.h](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.51/amsiejus_v0.5/v0.5_bib.h)
 * [CPP funkcijos: v0.5_bib.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.51/amsiejus_v0.5/v0.5_bib.cpp)
 ## Nuorodos į release'us
-* [0.5 release](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/v0.5)
+* [0.5 release](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/v0.51)
 ## Papildoma info
 **2020 11 05**
 * Failo sukūrimas
