@@ -1,4 +1,4 @@
-# V0.4 (atnaujinta)
+# Programos versija 0.4 (atnaujinta)
 ## Failai:
 * [Main: amsiejus_v0.4.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.41/amsiejus_v0.4/amsiejus_v0.4.cpp)
 * [Header: v0.4_bib.h](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.41/amsiejus_v0.4/v04_bib.h)
