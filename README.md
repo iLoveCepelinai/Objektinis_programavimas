@@ -1,8 +1,8 @@
 # V0.4 (atnaujinta)
 ## Failai:
-* [Main: amsiejus_v0.4.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/amsiejus_v0.4.cpp)
-* [Header: v0.4_bib.h](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/v04_bib.h)
-* [CPP funkcijos: v0.4_bib.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.4/v0.4_bib.cpp)
+* [Main: amsiejus_v0.4.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.41/amsiejus_v0.4/amsiejus_v0.4.cpp)
+* [Header: v0.4_bib.h](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.41/amsiejus_v0.4/v04_bib.h)
+* [CPP funkcijos: v0.4_bib.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.41/amsiejus_v0.4/v0.4_bib.cpp)
 ## Kompiuterio parametrai:
 * Intel core i7-7700HQ
 * 8 GB RAM DDR4
