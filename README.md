@@ -1,4 +1,4 @@
-# Programos versija 0.3
+# Programos versija 0.3 (atnaujinta)
 Matas Amšiejus
 
 ## Nuoroda į projektinį failą:
