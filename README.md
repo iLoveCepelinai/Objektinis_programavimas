@@ -10,7 +10,7 @@ P.S pats kodas niekur nebuvo redagutas kuriant naujas šakas
 * [Projektas](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases)
 
 *Į namų darbo šakas (naujos):*
-* [Programa v0.1](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.11-array)
+* [Programa v0.1](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.11(array))
 
 *Į namų darbo šakas (senos):*
 * [Programa v0.1](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.1)
