@@ -1,4 +1,4 @@
-# Versija 0.1 naudojant vector
+# Programos versija 0.1 naudojant vector
 Matas Amšiejus
 
 ## Svarbu!!:
