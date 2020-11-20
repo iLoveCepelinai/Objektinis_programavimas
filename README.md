@@ -1,4 +1,4 @@
-0.2 (atnaujinta)
+# 0.2 (atnaujinta)
 Matas Amšiejus
 
 Ši dalis yra jau daryta nuo pradžių su vektorių ir duomenų skaitymu iš failų idėja. Dėl to kodas gana aiškus (palyginus su bet kokia v0.1). Bet, dėl failų skaitymo, programos
