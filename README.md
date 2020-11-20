@@ -9,7 +9,8 @@ P.S pats kodas niekur nebuvo redagutas kuriant naujas šakas
 *Į projektų versijas:*
 * [Projektas](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases)
 
-**Čia reikia įterpti nuorodas į naujas šakas**
+*Į namų darbo šakas (naujos):*
+* [Programa v0.1](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.11-array)
 
 *Į namų darbo šakas (senos):*
 * [Programa v0.1](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.1)
@@ -20,8 +21,6 @@ P.S pats kodas niekur nebuvo redagutas kuriant naujas šakas
 
 ## Taip pat naudinga:
 **Darbas buvo atliekamas naudojant "Visual Studio 2019"**
-
-***Paaiškinimas dėl v0.11 versijos įkėlimo datos ir formato projekto (tag v0.1) aprašyme***
 
 ***Paaiškinimas dėl v0.14 versijos (masyvai) kodėl meta error'ą neegzistuoja. Tačiau kodas veikia***
 
