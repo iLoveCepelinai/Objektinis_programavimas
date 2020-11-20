@@ -2,7 +2,7 @@
 Matas Amšiejus
 
 ## Svarbu!!:
-Kadangi kažkodėl klaidingai supratau kaip veikia Github, nuo pat pradžių blogai kėliau failus. Todėl pradėjau redaguoti tik 2020 11 20 (išklausiau pratybų ir supratau, kad pas mane, siunčiantis source code zip failą, atsiunčia klaidingus dalykus). Todėl dabar kursiu 5 naujas šakas (v_0.11, v_0.21, ..., v_0.51) tam, kad jūs galėtumėte matyti, kad originalios šakos buvo įkeltos laiku (v_0.1 šaką perdariau nepamąstęs, kad išsitrins įkėlimo laikai. Dėl to tiesiog prašau jūsų pasitikėti, kad ta versija buvo įkelta laiku). Atsiprašau dėl sukeltų nepatogumų ir neaiškumų.
+Kadangi kažkodėl klaidingai supratau kaip veikia Github, nuo pat pradžių blogai kėliau failus. Todėl pradėjau redaguoti tik 2020 11 20 (išklausiau pratybų ir supratau, kad pas mane, siunčiantis source code zip failą, atsiunčia klaidingus dalykus). Todėl dabar kursiu 5 naujas šakas (v_0.11-array, v_0.11-vector, v_0.21, ..., v_0.51) tam, kad jūs galėtumėte matyti, kad originalios šakos buvo įkeltos laiku (v_0.1 šaką perdariau nepamąstęs, kad išsitrins įkėlimo laikai. Dėl to tiesiog prašau jūsų pasitikėti, kad ta versija buvo įkelta laiku). Atsiprašau dėl sukeltų nepatogumų ir neaiškumų.
 
 P.S pats kodas niekur nebuvo redagutas kuriant naujas šakas
 ## Nuorodos:
