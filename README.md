@@ -5,5 +5,5 @@ Matas Amšiejus
 kodas gana radikaliai keičiasi, ši programa turi labai nedaug bendro su v0.11, nebent kelis kintamuosius. Programa parašyta per vieną kartą, todėl yra tik 
 vienas tag ar, kitaip tariant, viena versija.
 ## Pastaba! 
-Atlikta labai nedaug (praktiškai jokio) klaidų tikrinimo. Gal ateityje pridėsiu.
-
+* Atlikta labai nedaug (praktiškai jokio) klaidų tikrinimo. Gal ateityje pridėsiu.
+* Pridedu su papildomu 10000.txt failu
