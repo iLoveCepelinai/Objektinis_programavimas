@@ -27,4 +27,7 @@ P.S pats kodas niekur nebuvo redagutas kuriant naujas šakas
 ## Taip pat naudinga:
 **Darbas buvo atliekamas naudojant "Visual Studio 2019"**
 
+## Eksperimento su v0.4 ir 0.5 išvados
+Palyginus vektorių ir sąrašų spartą (10 000 000, release x64) matome, kad vektoriai viską atlieka sparčiau.
+
 :-)
