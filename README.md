@@ -11,7 +11,12 @@ Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo me
 **Jei pakeitėte konteinerių tipą ar norite pakeisti rūšiavimo būdą, reikia:**
 
 ***a)Darant su vector, 1 būdas:***
-
+* 13 eilutė turi būti tokia: vector <studentas> grupe, dundukai, sukciukai;
+* Visas main'e (amsiejus_v1.0.cpp) esančias funkcijas *skaitymasList(<...>)* pakeisti į *skaitymasVec(<...>)*
+* Visas main'e esančias funkcijas *skirstymasManoList(grupe, dundukai)* pakeisti į *skirstymas1Vec(grupe, dundukai, sukciukai)*
+* Visas main'e esančias funkcijas *surasymasList(dundukai, grupe, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* pakeisti į *surasymasVec(dundukai, sukciukai, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* (failų pavadinimų keisti nereikia)
+* Visas main'e esančias funkcijas *grupe.clear();* pakeisti į *sukciukai.clear();*
+  
 ***b)Darant su list, 1 būdas:***
 
 ***c)Darant su vector, 2 būdas:***
