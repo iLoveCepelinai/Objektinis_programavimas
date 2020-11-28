@@ -9,6 +9,7 @@ void skaitymasList(int, list <studentas>&, string);
 
 
 void skirstymas1Vec(vector <studentas>&, vector <studentas>&, vector <studentas>&);
+void skirstymas1List(list <studentas>&, list <studentas>&, list <studentas>&);
 void skirstymasManoVector(vector <studentas>&, vector <studentas>&);
 void skirstymasManoList(list <studentas>&, list <studentas>&);
 
@@ -257,7 +258,22 @@ void skirstymas1Vec(vector <studentas>& grupele, vector <studentas>& dundukai, v
 }
 
 //list pirma strategija:
+void skirstymas1List(list <studentas>& grupele, list <studentas>& dundukai, list <studentas>& sukciukai) {
+    auto start = std::chrono::high_resolution_clock::now();
 
+    for (auto& studenciokas : grupele) {
+        if (studenciokas.galut < 5) {
+            dundukai.push_back(studenciokas);
+        }
+        else {
+            sukciukai.push_back(studenciokas);
+        }
+    }
+    grupele.clear();
+
+    std::chrono::duration<double> diff = std::chrono::high_resolution_clock::now() - start;
+    cout << "Rusiavimas ir skirstymas i 2 listus uztruko: " << diff.count() << "s" << endl;
+}
 
 //vector antra startegija:
 

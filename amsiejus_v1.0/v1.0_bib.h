@@ -35,6 +35,7 @@ void skaitymasVec(int, vector <studentas>&, string);
 void skaitymasList(int, list <studentas>&, string);
 
 void skirstymas1Vec(vector <studentas>&, vector <studentas>&, vector <studentas>&);
+void skirstymas1List(list <studentas>&, list <studentas>&, list <studentas>&);
 void skirstymasManoVector(vector <studentas>&, vector <studentas>&);
 void skirstymasManoList(list <studentas>&, list <studentas>&);
 
