@@ -1,33 +1,25 @@
-# Objektinis programavimas (Namų darbas)
-Matas Amšiejus
-
-## Svarbu!!:
-Kadangi kažkodėl klaidingai supratau kaip veikia Github, nuo pat pradžių blogai kėliau failus. Todėl pradėjau redaguoti tik 2020 11 20 (išklausiau pratybų ir supratau, kad pas mane, siunčiantis source code zip failą, atsiunčia klaidingus dalykus). Todėl dabar kursiu 5 naujas šakas (v_0.11-array, v_0.11-vector, v_0.21, ..., v_0.51) tam, kad jūs galėtumėte matyti, kad originalios šakos buvo įkeltos laiku (v_0.1 šaką perdariau nepamąstęs, kad išsitrins įkėlimo laikai. Dėl to tiesiog prašau jūsų pasitikėti, kad ta versija buvo įkelta laiku). Atsiprašau dėl sukeltų nepatogumų ir neaiškumų.
-
-P.S pats kodas niekur nebuvo redagutas kuriant naujas šakas
-## Nuorodos:
-*Į projektų versijas:*
-* [Projektas](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases)
-
-*Į namų darbo šakas (naujos):*
-* [Programa v0.11(array)](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.11(array))
-* [Programa v0.11(vector)](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.11(vector))
-* [Programa v0.21](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.21)
-* [Programa v0.31](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.31)
-* [Programa v0.41](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.41)
-* [Programa v0.51](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.51)
-
-*Į namų darbo šakas (senos):*
-* [Programa v0.1](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.1)
-* [Programa v0.2](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.2)
-* [Programa v0.3](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.3)
-* [Programa v0.4](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.4)
-* [Programa v0.5](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.5)
-
-## Taip pat naudinga:
-**Darbas buvo atliekamas naudojant "Visual Studio 2019"**
-
-## Eksperimento su v0.4 ir 0.5 išvados
-Palyginus vektorių ir sąrašų spartą (10 000 000, release x64) matome, kad vektoriai viską atlieka sparčiau.
-
-:-)
+# Programos versija 1.0
+Maišyti skirstymo į list/vector būdai
+## Failai:
+* [Main: amsiejus_v1.0.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/amsiejus_v1.0/amsiejus_v1.0.cpp)
+* [Header: v1.0_bib.h](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/amsiejus_v1.0/v1.0_bib.h)
+* [CPP funkcijos: v1.0_bib.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/amsiejus_v1.0/v1.0_bib.cpp)
+## Nuorodos į release'us
+* [0.5 release](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/0.51)
+## Naudojimosi instrukcija
+Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo metodą (mano versija). Todėl norint pakeisti į kitą skirstymo/konteinerių versiją reikia:
+**Jei pakeitėte konteinerių tipą ar norite pakeisti rūšiavimo būdą, reikia:**
+*a)Darant su vector, 1 būdas:*
+*b)Darant su list, 1 būdas:*
+*c)Darant su vector, 2 būdas:*
+*d)Darant su list, 2 būdas:*
+*c)Darant su vector, 3 (mano) būdas:*
+* Pakeisti 13 eilutėje į vector vietoje list;
+* Pakeisti 13 eilutėje *dundukai* į *sukciukai*
+* Visas main'e (amsiejus_v1.0.cpp) esančias funkcijas *skirstymasManoList(grupe, dundukai)* pakeisti į *skirstymasManoVector(grupe, **sukciukai**, [skaicius studentų (int)])*
+* Visas main'e esančias funkcijas *surasymas(dundukai, grupe, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* pakeisti į *surasymas(grupe, sukciukai, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* (failų pavadinimų keisti nereikia)
+*c)Darant su list, 3 (mano) būdas:*
+* Nieko daryti nereikia, nes čia numatytasis (default) būdas
+## Papildoma info
+**2020 11 28**
+* Padarytas šioks toks šablonas, įdėtos jau dvi skirtymo funkcijos (abi mano, iš versijų 0.4 ir 0.5)
