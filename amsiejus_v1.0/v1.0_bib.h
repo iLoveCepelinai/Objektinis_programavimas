@@ -34,7 +34,8 @@ void failuKurimas(int, int);
 void skaitymasVec(int, vector <studentas>&, string);
 void skaitymasList(int, list <studentas>&, string);
 
-void skirstymasManoVector(vector <studentas>&, vector <studentas>&, int);
+void skirstymas1Vec(vector <studentas>&, vector <studentas>&, vector <studentas>&);
+void skirstymasManoVector(vector <studentas>&, vector <studentas>&);
 void skirstymasManoList(list <studentas>&, list <studentas>&);
 
 void surasymasList(list <studentas>, list <studentas>, string, string);

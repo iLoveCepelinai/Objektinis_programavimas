@@ -45,7 +45,7 @@ int main()
 
 
     //10000 eiluciu
-    
+
     failuKurimas(5, 10000);
 
     skaitymasList(10000, grupe, pasirinkimas);
@@ -96,7 +96,7 @@ int main()
     surasymasList(dundukai, grupe, "dundukai10000000.txt", "sukciukai10000000.txt");
     grupe.clear();
     dundukai.clear();
-    
+
     system("pause");
     return 0;
 }

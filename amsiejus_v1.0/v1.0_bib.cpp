@@ -8,7 +8,8 @@ void skaitymasList(int, list <studentas>&, string);
 
 
 
-void skirstymasManoVector(vector <studentas>&, vector <studentas>&, int);
+void skirstymas1Vec(vector <studentas>&, vector <studentas>&, vector <studentas>&);
+void skirstymasManoVector(vector <studentas>&, vector <studentas>&);
 void skirstymasManoList(list <studentas>&, list <studentas>&);
 
 
@@ -235,7 +236,25 @@ void skaitymasVec(int studkiekis, vector <studentas>& grupele, string pasirinkim
 //skirstymas bus skirtingas listams ir vektoriams, bei bus skirtingi skirtymo budai:
 
 //vector pirma strategija:
+void skirstymas1Vec(vector <studentas>& grupele, vector <studentas>& dundukai, vector <studentas>& sukciukai) {
+    auto start = std::chrono::high_resolution_clock::now();
+    
+    int studKiekis = grupele.size();
+    dundukai.reserve(studKiekis * 0.5);
+    sukciukai.reserve(studKiekis * 0.6);
+    for (auto& studenciokas : grupele) {
+        if (studenciokas.galut < 5) {
+            dundukai.push_back(studenciokas);
+        }
+        else {
+            sukciukai.push_back(studenciokas);
+        }
+    }
+    grupele.clear();
 
+    std::chrono::duration<double> diff = std::chrono::high_resolution_clock::now() - start;
+    cout << "Rusiavimas ir skirstymas i 2 vektorius uztruko: " << diff.count() << "s" << endl;
+}
 
 //list pirma strategija:
 
@@ -247,9 +266,10 @@ void skaitymasVec(int studkiekis, vector <studentas>& grupele, string pasirinkim
 
 
 //vector mano strategija:
-void skirstymasManoVector(vector <studentas>& grupele, vector <studentas>& sukciukai, int studKiekis) {
+void skirstymasManoVector(vector <studentas>& grupele, vector <studentas>& sukciukai) {
     auto start = std::chrono::high_resolution_clock::now();
     sort(grupele.begin(), grupele.end(), compareByGalut);   //surusiuojame musu studentu vektoriu
+    int studKiekis = grupele.size();
 
     sukciukai.reserve(studKiekis * 0.6);
 
@@ -324,7 +344,7 @@ void surasymasList(list <studentas> dundukai, list <studentas> sukciukai, string
 }
 
 
-void surasymasVec(vector <studentas> sukciukai, vector <studentas> dundukai, string pavDundukai, string pavSukciukai) {
+void surasymasVec(vector <studentas> dundukai, vector <studentas> sukciukai, string pavDundukai, string pavSukciukai) {
     auto start = std::chrono::high_resolution_clock::now();
     ofstream failD(pavDundukai); // kuriame dunduku faila
     int ndKiekis = dundukai.front().nd.size();    //paimame belenkoki vektoriaus elementa (studenta) ir patikriname kiek jis turi nd
