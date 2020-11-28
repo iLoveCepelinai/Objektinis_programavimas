@@ -1,21 +1,28 @@
 #include "v1.0_bib.h";
 
 void failuKurimas(int, int);
-void skaitymas(int, list <studentas>&, string);
-//skirstymo funkciju variantai:
+
+
+void skaitymasVec(int, vector <studentas>&, string);
+void skaitymasList(int, list <studentas>&, string);
+
+
+
 void skirstymasManoVector(vector <studentas>&, vector <studentas>&, int);
 void skirstymasManoList(list <studentas>&, list <studentas>&);
 
-void surasymas(list <studentas>, list <studentas>, string, string);
+
+void surasymasList(list <studentas>, list <studentas>, string, string);
+void surasymasVec(vector <studentas>, vector <studentas>, string, string);
 
 //papildomos funkcijos
 bool ar_5(studentas);
 bool compareByGalut(const studentas&, const studentas&);
 
 
-//tinkamos visiems variantams funkcijos yra failuKurimas, skaitymas ir surasymas (kodas nesiskiria)
 
 
+//failu kurimas yra tokia pati visiems 6 variantams
 void failuKurimas(int ndkiekis, int studkiekis) {
     auto start = std::chrono::high_resolution_clock::now();
     string tempVardas;
@@ -55,8 +62,92 @@ void failuKurimas(int ndkiekis, int studkiekis) {
 }
 
 
+//skaitymasList/skaitymasVec skiriasi tik jei naudojame skirtingà konteinerá (del to uztenka 2 funkciju)(pats kodas tas pats)
+void skaitymasList(int studkiekis, list <studentas>& grupele, string pasirinkimas) {
+    auto start = std::chrono::high_resolution_clock::now();
+    ifstream failas;
+    string sVardai, sPavardes, sTemp, egzaminas;
+    vector <string> ndMasyv;
+    int m;  //namu darbu kiekis
 
-void skaitymas(int studkiekis, list <studentas>& grupele, string pasirinkimas) {
+    string failoPav = to_string(studkiekis);
+    failoPav += ".txt";
+
+
+    try {
+        failas.open(failoPav);
+    }
+    catch (std::exception& e) {
+        cout << "Failas " << failoPav << " nebuvo rastas" << endl;
+    }
+
+    try {
+        if (!failas.good()) {
+            throw failoPav;
+        }
+        failas >> sVardai >> sPavardes >> sTemp;
+        while (sTemp != "Egz.") {
+            ndMasyv.push_back(sTemp);
+            failas >> sTemp;
+        }
+        egzaminas = sTemp;  //sie nuskaitymai pades tureti stulpeliu vardus, bet svarbiausia: bus zinomas namu darbu kiekis
+
+        m = ndMasyv.size();
+        ndMasyv.clear();
+
+        while (!failas.eof()) { //skaito iki kol atsimusa i failo pabaiga
+            studentas laik;
+            failas >> laik.vardas >> laik.pavard;
+
+            float laikPaz;
+
+            for (int i = 0; i < m; i++) {
+                failas >> laikPaz;
+                laik.nd.push_back(laikPaz);
+            }
+
+            failas >> laik.egz;
+
+            grupele.push_back(laik);
+        }
+        failas.close();
+    }
+    catch (string pav) {
+        cout << pav << " failas neegzistuoja arba jo nepavyko atidaryti\n";
+    }
+
+
+    //skaiciavimas pagal vidurki:
+    if (pasirinkimas == "vid") {
+        float suma;
+        float vid = 0;
+        for (auto& studenciokas : grupele) {
+            suma = std::accumulate(std::begin(studenciokas.nd), std::end(studenciokas.nd), 0.0);
+            vid = suma / m;
+            studenciokas.galut = 0.6 * studenciokas.egz + 0.4 * vid;
+        }
+    }
+
+    //skaiciavimas pagal mediana:
+    else {
+        double mediana;
+        for (auto& studenciokas : grupele) {
+            std::sort(studenciokas.nd.begin(), studenciokas.nd.end());
+            if (m % 2 == 0) {
+                mediana = (studenciokas.nd.at((m * 1.0) / 2 - 1) + studenciokas.nd.at(m / 2)) / 2;
+            }
+            else {
+                int index = (m * 1.0 - 1) / 2 + 0.5;
+                mediana = studenciokas.nd.at(index);
+            }
+            studenciokas.galut = 0.6 * studenciokas.egz + 0.4 * mediana;
+        }
+    }
+    std::chrono::duration<float> diff = std::chrono::high_resolution_clock::now() - start;
+    cout << "Skaitymas nuo failo uztruko: " << diff.count() << "s" << endl;
+}
+
+void skaitymasVec(int studkiekis, vector <studentas>& grupele, string pasirinkimas) {
     auto start = std::chrono::high_resolution_clock::now();
     ifstream failas;
     string sVardai, sPavardes, sTemp, egzaminas;
@@ -189,8 +280,8 @@ void skirstymasManoList(list <studentas>& grupele, list <studentas>& dundukai) {
 }
 
 
-
-void surasymas(list <studentas> dundukai, list <studentas> sukciukai, string pavDundukai, string pavSukciukai) {
+//surasymasList/surasymasVec skiriasi tik jei naudojame skirtingà konteinerá (del to uztenka 2 funkciju)(pats kodas tas pats)
+void surasymasList(list <studentas> dundukai, list <studentas> sukciukai, string pavDundukai, string pavSukciukai) {
     auto start = std::chrono::high_resolution_clock::now();
     ofstream failD(pavDundukai); // kuriame dunduku faila
     int ndKiekis = dundukai.front().nd.size();    //paimame belenkoki vektoriaus elementa (studenta) ir patikriname kiek jis turi nd
@@ -232,6 +323,48 @@ void surasymas(list <studentas> dundukai, list <studentas> sukciukai, string pav
     cout << "2 sarasu surasymas i 2 failus uztruko: " << diff.count() << "s" << endl;
 }
 
+
+void surasymasVec(vector <studentas> sukciukai, vector <studentas> dundukai, string pavDundukai, string pavSukciukai) {
+    auto start = std::chrono::high_resolution_clock::now();
+    ofstream failD(pavDundukai); // kuriame dunduku faila
+    int ndKiekis = dundukai.front().nd.size();    //paimame belenkoki vektoriaus elementa (studenta) ir patikriname kiek jis turi nd
+
+    failD << setw(20) << "Vardas" << setw(20) << "Pavarde" << "\t";
+
+    for (int i = 1; i <= ndKiekis; i++) {
+        failD << "ND" << i << "\t";
+    }
+
+    failD << "Egz." << "\t" << "Galut.";
+
+    for (auto& dundukas : dundukai) {
+        failD << endl;
+        failD << setw(20) << dundukas.vardas << setw(20) << dundukas.pavard << "\t";
+        for (auto& pazymys : dundukas.nd) failD << pazymys << "\t";
+        failD << dundukas.egz << "\t" << dundukas.galut;
+    }
+    failD.close();
+
+    ofstream failS(pavSukciukai); // kuriame sukciuku faila
+
+    failS << setw(20) << "Vardas" << setw(20) << "Pavarde" << "\t";
+
+    for (int i = 1; i <= ndKiekis; i++) {
+        failS << "ND" << i << "\t";
+    }
+
+    failS << "Egz." << "\t" << "Galut.";
+
+    for (auto& sukciukas : sukciukai) {
+        failS << endl;
+        failS << setw(20) << sukciukas.vardas << setw(20) << sukciukas.pavard << "\t";
+        for (auto& pazymys : sukciukas.nd) failS << pazymys << "\t";
+        failS << sukciukas.egz << "\t" << sukciukas.galut;
+    }
+    failS.close();
+    std::chrono::duration<float> diff = std::chrono::high_resolution_clock::now() - start;
+    cout << "2 sarasu surasymas i 2 failus uztruko: " << diff.count() << "s" << endl;
+}
 
 /*Pagalbines funkcijos:*/
 

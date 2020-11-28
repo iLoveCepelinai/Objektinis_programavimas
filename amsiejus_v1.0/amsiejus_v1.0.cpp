@@ -32,37 +32,41 @@ int main()
 
     failuKurimas(5, 1000);
 
-    skaitymas(1000, grupe, pasirinkimas);
+    skaitymasList(1000, grupe, pasirinkimas);//
 
-    skirstymasManoList(grupe, dundukai);
+    skirstymasManoList(grupe, dundukai);//
 
-    surasymas(dundukai, grupe, "dundukai1000.txt", "sukciukai1000.txt");
+    surasymasList(dundukai, grupe, "dundukai1000.txt", "sukciukai1000.txt");//
     grupe.clear();
-    dundukai.clear();
+    dundukai.clear();//
 
     system("pause");
-    //10000 eiluciu
 
+
+
+    //10000 eiluciu
+    
     failuKurimas(5, 10000);
 
-    skaitymas(10000, grupe, pasirinkimas);
+    skaitymasList(10000, grupe, pasirinkimas);
 
     skirstymasManoList(grupe, dundukai);
 
-    surasymas(dundukai, grupe, "dundukai10000.txt", "sukciukai10000.txt");
+    surasymasList(dundukai, grupe, "dundukai10000.txt", "sukciukai10000.txt");
     grupe.clear();
     dundukai.clear();
 
     system("pause");
+
 
     //100000 eiluciu
     failuKurimas(5, 100000);
 
-    skaitymas(100000, grupe, pasirinkimas);
+    skaitymasList(100000, grupe, pasirinkimas);
 
     skirstymasManoList(grupe, dundukai);
 
-    surasymas(dundukai, grupe, "dundukai100000.txt", "sukciukai100000.txt");
+    surasymasList(dundukai, grupe, "dundukai100000.txt", "sukciukai100000.txt");
     grupe.clear();
     dundukai.clear();
 
@@ -72,11 +76,11 @@ int main()
     //1000000 eiluciu
     failuKurimas(5, 1000000);
 
-    skaitymas(1000000, grupe, pasirinkimas);
+    skaitymasList(1000000, grupe, pasirinkimas);
 
     skirstymasManoList(grupe, dundukai);
 
-    surasymas(dundukai, grupe, "dundukai1000000.txt", "sukciukai1000000.txt");
+    surasymasList(dundukai, grupe, "dundukai1000000.txt", "sukciukai1000000.txt");
     grupe.clear();
     dundukai.clear();
 
@@ -85,14 +89,14 @@ int main()
     //10 000 000 eiluciu
     failuKurimas(5, 10000000);
 
-    skaitymas(10000000, grupe, pasirinkimas);
+    skaitymasList(10000000, grupe, pasirinkimas);
 
     skirstymasManoList(grupe, dundukai);
 
-    surasymas(dundukai, grupe, "dundukai10000000.txt", "sukciukai10000000.txt");
+    surasymasList(dundukai, grupe, "dundukai10000000.txt", "sukciukai10000000.txt");
     grupe.clear();
     dundukai.clear();
-
+    
     system("pause");
     return 0;
 }

@@ -31,12 +31,14 @@ struct studentas {
 
 void failuKurimas(int, int);
 
-void skaitymas(int, list <studentas>&, string);
+void skaitymasVec(int, vector <studentas>&, string);
+void skaitymasList(int, list <studentas>&, string);
 
 void skirstymasManoVector(vector <studentas>&, vector <studentas>&, int);
 void skirstymasManoList(list <studentas>&, list <studentas>&);
 
-void surasymas(list <studentas>, list <studentas>, string, string);
+void surasymasList(list <studentas>, list <studentas>, string, string);
+void surasymasVec(vector <studentas>, vector <studentas>, string, string);
 
 
 bool ar_5(studentas);
