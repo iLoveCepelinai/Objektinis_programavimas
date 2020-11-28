@@ -5,7 +5,7 @@ Maišyti skirstymo į list/vector būdai
 * [Header: v1.0_bib.h](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/amsiejus_v1.0/v1.0_bib.h)
 * [CPP funkcijos: v1.0_bib.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/amsiejus_v1.0/v1.0_bib.cpp)
 ## Nuorodos į release'us
-* [0.5 release](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/0.51)
+* [1.0 release (WIP)](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/v1.0)
 ## Naudojimosi instrukcija
 Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo metodą (mano versija). Todėl norint pakeisti į kitą skirstymo/konteinerių versiją reikia:
 **Jei pakeitėte konteinerių tipą ar norite pakeisti rūšiavimo būdą, reikia:**
