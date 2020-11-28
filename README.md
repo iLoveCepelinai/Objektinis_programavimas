@@ -18,7 +18,11 @@ Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo me
 * Visas main'e esančias funkcijas *grupe.clear();* pakeisti į *sukciukai.clear();*
   
 ***b)Darant su list, 1 būdas:***
-
+* 13 eilutė turi būti tokia: list <studentas> grupe, dundukai, sukciukai;
+* Visas main'e esančias funkcijas *skirstymasManoList(grupe, dundukai)* pakeisti į *skirstymas1List(grupe, dundukai, sukciukai)*
+* Visas main'e esančias funkcijas *surasymasList(dundukai, grupe, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* pakeisti į *surasymasList(dundukai, sukciukai, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* (failų pavadinimų keisti nereikia)
+* Visas main'e esančias funkcijas *grupe.clear();* pakeisti į *sukciukai.clear();*
+  
 ***c)Darant su vector, 2 būdas:***
 
 ***d)Darant su list, 2 būdas:***
@@ -33,6 +37,9 @@ Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo me
 
 ***f)Darant su list, 3 (mano) būdas:***
 * Nieko daryti nereikia, nes čia numatytasis (default) būdas
+
+
 ## Papildoma info
 **2020 11 28**
 * Padarytas šioks toks šablonas, įdėtos jau dvi skirtymo funkcijos (abi mano, iš versijų 0.4 ir 0.5)
+* Vėliau padarytos abi rūšiacimo funkcijos 1 būdui bei pritaikytos skaitymo ir rašymo funkcijos pagal konteinerius 
