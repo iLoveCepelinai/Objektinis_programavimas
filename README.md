@@ -23,7 +23,7 @@ Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo me
 * Pakeisti 13 eilutėje *dundukai* į *sukciukai*
 * Visas main'e (amsiejus_v1.0.cpp) esančias funkcijas *skaitymasList(<...>)* pakeisti į *skaitymasVec(<...>)*
 * Visas main'e esančias funkcijas *skirstymasManoList(grupe, dundukai)* pakeisti į *skirstymasManoVector(grupe, sukciukai)*
-* Visas main'e esančias funkcijas *surasymasList(dundukai, grupe, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* pakeisti į *surasymasVec(sukciukai, grupe, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* (failų pavadinimų keisti nereikia)
+* Visas main'e esančias funkcijas *surasymasList(dundukai, grupe, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* pakeisti į *surasymasVec(grupe, sukciukai, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* (failų pavadinimų keisti nereikia)
 * Visas main'e esančias funkcijas *dundukai.clear();* pakeisti į *sukciukai.clear();*
 
 ***f)Darant su list, 3 (mano) būdas:***
