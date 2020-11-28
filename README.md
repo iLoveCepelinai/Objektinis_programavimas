@@ -18,7 +18,7 @@ Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo me
 
 ***d)Darant su list, 2 būdas:***
 
-***c)Darant su vector, 3 (mano) būdas:***
+***e)Darant su vector, 3 (mano) būdas:***
 * Pakeisti 13 eilutėje į vector vietoje list
 * Pakeisti 13 eilutėje *dundukai* į *sukciukai*
 * Visas main'e (amsiejus_v1.0.cpp) esančias funkcijas *skaitymasList(<...>)* pakeisti į *skaitymasVec(<...>)*
@@ -26,7 +26,7 @@ Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo me
 * Visas main'e esančias funkcijas *surasymasList(dundukai, grupe, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* pakeisti į *surasymasVec(sukciukai, grupe, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* (failų pavadinimų keisti nereikia)
 * Visas main'e esančias funkcijas *dundukai.clear();* pakeisti į *sukciukai.clear();*
 
-***c)Darant su list, 3 (mano) būdas:***
+***f)Darant su list, 3 (mano) būdas:***
 * Nieko daryti nereikia, nes čia numatytasis (default) būdas
 ## Papildoma info
 **2020 11 28**
