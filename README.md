@@ -66,6 +66,25 @@ Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo me
   
 * Nieko daryti nereikia, nes čia numatytasis (default) būdas
 
+## Išvados
+Mano versijoje v1.0 buvo skirstoma 6 būdais: 4 iš jų duoti dėstytojo, 2 - mano pasirinkti ankstesnėse versijose (v0.4 ir v0.5). Mano būdai buvi grįsti pirma surūšiavimu pagal galutinį pažymį, paskui:
+* vektorių būdu: tie, kurie surinko >=5 yra kopijuojami nuo galo į sukciukai vektorių, o iš bendro (grupe) vektoriaus šalinami (pop)
+* list'ų būdu: atliekama splice funkcija, iškerpanti iš sąrašo grupe dundukus (<5) ir perkelianti į dundukai list'ą. Automatiškai list'e grupe lieka tik sukciukai (>=5)
+
+Taigi, pagal laikus (žiūrėsiu tik į release x64 10 000 000 greičius, bet visi greičiai yra OPP aplankale) gauname (lėtėjimo eiliškumu):
+* vector pirmas būdas (~1.29s)
+* vector antras būdas (~1.49s)
+* list antras būdas (~2.58s)
+* list pirmas būdas (~2.92s)
+* vector mano būdas (~3.37s)
+* list mano būdas (~9.95s)
+
+Buvau nustebintas, kad sąrašų trynimo būdas (2) buvo šiek tiek greitesnis už sąrašų dubliavimo (1) būdą. Taip pat galima matyti, kad rūšiuoti nei vektorių, nei listų neapsimoka, nors tai, atminties atžvilgiu, yra pats efektyviausias būdas.
+
+## Kompiuterio parametrai
+* Intel core i7-7700HQ
+* 8 GB RAM DDR4
+* Failas įrašomas/nuskaitomas iš HDD, bet Visual Studio įrašyta į SSD
 
 ## Papildoma info
 **2020 11 28**
