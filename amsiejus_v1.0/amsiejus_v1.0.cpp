@@ -30,6 +30,8 @@ int main()
 
     //1000 eiluciu
 
+    cout << "-------------1000-------------" << endl;
+
     failuKurimas(5, 1000);
 
     skaitymasList(1000, grupe, pasirinkimas);//
@@ -40,11 +42,13 @@ int main()
     grupe.clear();
     dundukai.clear();//
 
+    cout << endl;
     system("pause");
 
 
-
-    //10000 eiluciu
+    //10 000 eiluciu
+    
+    cout << "-------------10 000-------------" << endl;
 
     failuKurimas(5, 10000);
 
@@ -56,10 +60,14 @@ int main()
     grupe.clear();
     dundukai.clear();
 
+    cout << endl;
     system("pause");
 
 
-    //100000 eiluciu
+    //100 000 eiluciu
+
+    cout << "-------------100 000-------------" << endl;
+
     failuKurimas(5, 100000);
 
     skaitymasList(100000, grupe, pasirinkimas);
@@ -70,10 +78,14 @@ int main()
     grupe.clear();
     dundukai.clear();
 
+    cout << endl;
     system("pause");
 
 
-    //1000000 eiluciu
+    //1 000 000 eiluciu
+
+    cout << "-------------1 000 000-------------" << endl;
+
     failuKurimas(5, 1000000);
 
     skaitymasList(1000000, grupe, pasirinkimas);
@@ -84,19 +96,24 @@ int main()
     grupe.clear();
     dundukai.clear();
 
+    cout << endl;
     system("pause");
 
     //10 000 000 eiluciu
+
+    cout << "-------------10 000 000-------------" << endl;
+
     failuKurimas(5, 10000000);
 
-    skaitymasList(10000000, grupe, pasirinkimas);
+    skaitymasList(10000000, grupe, pasirinkimas);//
 
-    skirstymasManoList(grupe, dundukai);
+    skirstymasManoList(grupe, dundukai);//
 
-    surasymasList(dundukai, grupe, "dundukai10000000.txt", "sukciukai10000000.txt");
+    surasymasList(dundukai, grupe, "dundukai10000000.txt", "sukciukai10000000.txt");//
     grupe.clear();
-    dundukai.clear();
+    dundukai.clear();//
 
+    cout << endl;
     system("pause");
     return 0;
 }

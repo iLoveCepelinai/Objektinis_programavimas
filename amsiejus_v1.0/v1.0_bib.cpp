@@ -10,6 +10,8 @@ void skaitymasList(int, list <studentas>&, string);
 
 void skirstymas1Vec(vector <studentas>&, vector <studentas>&, vector <studentas>&);
 void skirstymas1List(list <studentas>&, list <studentas>&, list <studentas>&);
+void skirstymas2Vec(vector <studentas>&, vector <studentas>&);
+void skirstymas2List(list <studentas>&, list <studentas>&);
 void skirstymasManoVector(vector <studentas>&, vector <studentas>&);
 void skirstymasManoList(list <studentas>&, list <studentas>&);
 
@@ -26,7 +28,6 @@ bool compareByGalut(const studentas&, const studentas&);
 
 //failu kurimas yra tokia pati visiems 6 variantams
 void failuKurimas(int ndkiekis, int studkiekis) {
-    auto start = std::chrono::high_resolution_clock::now();
     string tempVardas;
     string tempPavarde;
 
@@ -59,8 +60,6 @@ void failuKurimas(int ndkiekis, int studkiekis) {
         failas << std::rand() % 10 + 1;
     }
     failas.close();
-    std::chrono::duration<float> diff = std::chrono::high_resolution_clock::now() - start;
-    cout << "Failo sukurimas uztruko: " << diff.count() << "s" << endl;
 }
 
 
@@ -236,6 +235,9 @@ void skaitymasVec(int studkiekis, vector <studentas>& grupele, string pasirinkim
 
 //skirstymas bus skirtingas listams ir vektoriams, bei bus skirtingi skirtymo budai:
 
+
+
+
 //vector pirma strategija:
 void skirstymas1Vec(vector <studentas>& grupele, vector <studentas>& dundukai, vector <studentas>& sukciukai) {
     auto start = std::chrono::high_resolution_clock::now();
@@ -276,10 +278,41 @@ void skirstymas1List(list <studentas>& grupele, list <studentas>& dundukai, list
 }
 
 //vector antra startegija:
+void skirstymas2Vec(vector <studentas>& grupele, vector <studentas>& dundukai) {
+    auto start = std::chrono::high_resolution_clock::now();
 
+    int studKiekis = grupele.size();
+    dundukai.reserve(studKiekis * 0.5);
+    
+    for (auto studenciokas : grupele) {
+        if (studenciokas.galut < 5) {
+            dundukai.push_back(studenciokas);
+        }
+    }
+
+    grupele.erase(remove_if(grupele.begin(), grupele.end(), [](studentas const& dundukas) {
+        return dundukas.galut < 5; }), grupele.end());
+
+    std::chrono::duration<double> diff = std::chrono::high_resolution_clock::now() - start;
+    cout << "Rusiavimas ir skirstymas i 2 vektorius uztruko: " << diff.count() << "s" << endl;
+}
 
 //list antra strategija:
+void skirstymas2List(list <studentas>& grupele, list <studentas>& dundukai) {
+    auto start = std::chrono::high_resolution_clock::now();
 
+    for (auto studenciokas : grupele) {
+        if (studenciokas.galut < 5) {
+            dundukai.push_back(studenciokas);
+        }
+    }
+
+    grupele.erase(remove_if(grupele.begin(), grupele.end(), [](studentas const& dundukas) {
+        return dundukas.galut < 5; }), grupele.end());
+
+    std::chrono::duration<double> diff = std::chrono::high_resolution_clock::now() - start;
+    cout << "Rusiavimas ir skirstymas i 2 vektorius uztruko: " << diff.count() << "s" << endl;
+}
 
 //vector mano strategija:
 void skirstymasManoVector(vector <studentas>& grupele, vector <studentas>& sukciukai) {
@@ -408,6 +441,6 @@ bool ar_5(studentas i) {
     return (i.galut >= 5);
 }
 
-bool compareByGalut(const studentas& pirmas, const studentas& antras) {
+bool compareByGalut(studentas const& pirmas, studentas const& antras) {
     return pirmas.galut < antras.galut;
 }
