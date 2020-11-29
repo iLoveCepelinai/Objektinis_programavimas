@@ -1,4 +1,5 @@
 # V0.4
+Mano versijoje v0.4 pirma buvo surūšiuojama pagal galutinį pažymį, paskui tie, kurie surinko >=5 yra kopijuojami nuo galo į sukciukai vektorių, o iš bendro (grupe) vektoriaus šalinami (pop)
 ## Nuoroda į galutinę versiją:
 * [Galutinė 0.41](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/v0.41)
 * [Atnaujinta galutinė 0.42](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/v0.42)
