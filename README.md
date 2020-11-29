@@ -1,5 +1,5 @@
 # Programos versija 0.5 (atnaujinta)
-List implementacija
+Mano versijoje v0.5 buvo pirma surūšiuojama pagal galutinį pažymį, paskui atliekama splice funkcija, iškerpanti iš sąrašo grupe dundukus (<5) ir perkelianti į dundukai list'ą. Automatiškai list'e grupe lieka tik sukciukai (>=5)
 ## Failai:
 * [Main: amsiejus_v0.5.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.51/amsiejus_v0.5/amsiejus_v0.5.cpp)
 * [Header: v0.5_bib.h](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_0.51/amsiejus_v0.5/v0.5_bib.h)
