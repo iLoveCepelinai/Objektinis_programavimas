@@ -12,7 +12,7 @@ Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo me
 ***a)Darant su vector, 1 būdas:***
 * Nukopijuoti vector1_main ir įklijuoti į main'ą (amsiejus_v1.0.cpp)
 
-  arba
+  arba nukopijuoti [vector1_main](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/vector1_main) iš gitHub repozitorijos
   
 * 13 eilutė turi būti tokia: vector <studentas> grupe, dundukai, sukciukai;
 * Visas main'e (amsiejus_v1.0.cpp) esančias funkcijas *skaitymasList(<...>)* pakeisti į *skaitymasVec(<...>)*
