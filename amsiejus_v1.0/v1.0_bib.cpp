@@ -311,7 +311,7 @@ void skirstymas2List(list <studentas>& grupele, list <studentas>& dundukai) {
         return dundukas.galut < 5; }), grupele.end());
 
     std::chrono::duration<double> diff = std::chrono::high_resolution_clock::now() - start;
-    cout << "Rusiavimas ir skirstymas i 2 vektorius uztruko: " << diff.count() << "s" << endl;
+    cout << "Rusiavimas ir skirstymas i 2 listus uztruko: " << diff.count() << "s" << endl;
 }
 
 //vector mano strategija:

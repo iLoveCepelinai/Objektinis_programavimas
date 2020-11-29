@@ -47,7 +47,7 @@ int main()
 
 
     //10 000 eiluciu
-    
+
     cout << "-------------10 000-------------" << endl;
 
     failuKurimas(5, 10000);
