@@ -10,6 +10,10 @@ Maišyti skirstymo į list/vector būdai
 Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo metodą (mano versija). Todėl norint pakeisti į kitą skirstymo/konteinerių versiją reikia:
 
 ***a)Darant su vector, 1 būdas:***
+* Nukopijuoti vector1_main ir įklijuoti į main'ą (amsiejus_v1.0.cpp)
+
+  arba
+  
 * 13 eilutė turi būti tokia: vector <studentas> grupe, dundukai, sukciukai;
 * Visas main'e (amsiejus_v1.0.cpp) esančias funkcijas *skaitymasList(<...>)* pakeisti į *skaitymasVec(<...>)*
 * Visas main'e esančias funkcijas *skirstymasManoList(grupe, dundukai)* pakeisti į *skirstymas1Vec(grupe, dundukai, sukciukai)*
@@ -23,8 +27,13 @@ Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo me
 * Visas main'e esančias funkcijas *grupe.clear();* pakeisti į *sukciukai.clear();*
   
 ***c)Darant su vector, 2 būdas:***
+* Pakeisti 13 eilutėje iš *list* į *vector*
+* Visas main'e (amsiejus_v1.0.cpp) esančias funkcijas *skaitymasList(<...>)* pakeisti į *skaitymasVec(<...>)*
+* Visas main'e esančias funkcijas *skirstymasManoList(grupe, dundukai)* pakeisti į *skirstymas2Vector(grupe, dundukai)*
+* Visas main'e esančias funkcijas *surasymasList(<...>)* pakeisti į *surasymasVec(<...>)* (konteinerių ir failų pavadinimų keisti nereikia)
 
 ***d)Darant su list, 2 būdas:***
+* Visas main'e esančias funkcijas *skirstymasManoList(grupe, dundukai)* pakeisti į *skirstymas2List(grupe, dundukai)*
 
 ***e)Darant su vector, 3 (mano) būdas:***
 * Pakeisti 13 eilutėje į vector vietoje list
