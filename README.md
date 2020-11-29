@@ -10,9 +10,9 @@ Maišyti skirstymo į list/vector būdai
 Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo metodą (mano versija). Todėl norint pakeisti į kitą skirstymo/konteinerių versiją reikia:
 
 ***a)Darant su vector, 1 būdas:***
-* Nukopijuoti vector1_main ir įklijuoti į main'ą (amsiejus_v1.0.cpp)
+* Nukopijuoti [vector1_main](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/vector1_main) iš gitHub repozitorijos ir įklijuoti į main'ą (amsiejus_v1.0.cpp)
 
-  arba nukopijuoti [vector1_main](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/vector1_main) iš gitHub repozitorijos
+  arba
   
 * 13 eilutė turi būti tokia: vector <studentas> grupe, dundukai, sukciukai;
 * Visas main'e (amsiejus_v1.0.cpp) esančias funkcijas *skaitymasList(<...>)* pakeisti į *skaitymasVec(<...>)*
@@ -21,21 +21,37 @@ Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo me
 * Visas main'e esančias funkcijas *grupe.clear();* pakeisti į *sukciukai.clear();*
   
 ***b)Darant su list, 1 būdas:***
+* Nukopijuoti [list1_main](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/list1_main) iš gitHub repozitorijos ir įklijuoti į main'ą (amsiejus_v1.0.cpp)
+
+  arba
+  
 * 13 eilutė turi būti tokia: list <studentas> grupe, dundukai, sukciukai;
 * Visas main'e esančias funkcijas *skirstymasManoList(grupe, dundukai)* pakeisti į *skirstymas1List(grupe, dundukai, sukciukai)*
 * Visas main'e esančias funkcijas *surasymasList(dundukai, grupe, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* pakeisti į *surasymasList(dundukai, sukciukai, "dundukai[kiekis].txt", "sukciukai[kiekis].txt")* (failų pavadinimų keisti nereikia)
 * Visas main'e esančias funkcijas *grupe.clear();* pakeisti į *sukciukai.clear();*
   
 ***c)Darant su vector, 2 būdas:***
+* Nukopijuoti [vector2_main](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/vector2_main) iš gitHub repozitorijos ir įklijuoti į main'ą (amsiejus_v1.0.cpp)
+
+  arba
+  
 * Pakeisti 13 eilutėje iš *list* į *vector*
 * Visas main'e (amsiejus_v1.0.cpp) esančias funkcijas *skaitymasList(<...>)* pakeisti į *skaitymasVec(<...>)*
 * Visas main'e esančias funkcijas *skirstymasManoList(grupe, dundukai)* pakeisti į *skirstymas2Vector(grupe, dundukai)*
 * Visas main'e esančias funkcijas *surasymasList(<...>)* pakeisti į *surasymasVec(<...>)* (konteinerių ir failų pavadinimų keisti nereikia)
 
 ***d)Darant su list, 2 būdas:***
+* Nukopijuoti [list2_main](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/list2_main) iš gitHub repozitorijos ir įklijuoti į main'ą (amsiejus_v1.0.cpp)
+
+  arba
+  
 * Visas main'e esančias funkcijas *skirstymasManoList(grupe, dundukai)* pakeisti į *skirstymas2List(grupe, dundukai)*
 
 ***e)Darant su vector, 3 (mano) būdas:***
+* Nukopijuoti [vectorMano_main](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/vectorMano_main) iš gitHub repozitorijos ir įklijuoti į main'ą (amsiejus_v1.0.cpp)
+
+  arba
+  
 * Pakeisti 13 eilutėje į vector vietoje list
 * Pakeisti 13 eilutėje *dundukai* į *sukciukai*
 * Visas main'e (amsiejus_v1.0.cpp) esančias funkcijas *skaitymasList(<...>)* pakeisti į *skaitymasVec(<...>)*
@@ -44,6 +60,10 @@ Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo me
 * Visas main'e esančias funkcijas *dundukai.clear();* pakeisti į *sukciukai.clear();*
 
 ***f)Darant su list, 3 (mano) būdas:***
+* Nukopijuoti [listMano_main](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/listMano_main) iš gitHub repozitorijos ir įklijuoti į main'ą (amsiejus_v1.0.cpp) jei kažką keitėte main'e
+
+  arba
+  
 * Nieko daryti nereikia, nes čia numatytasis (default) būdas
 
 
