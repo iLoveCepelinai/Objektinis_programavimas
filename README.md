@@ -89,4 +89,6 @@ Buvau nustebintas, kad sąrašų trynimo būdas (2) buvo šiek tiek greitesnis u
 ## Papildoma info
 **2020 11 28**
 * Padarytas šioks toks šablonas, įdėtos jau dvi skirtymo funkcijos (abi mano, iš versijų 0.4 ir 0.5)
-* Vėliau padarytos abi rūšiacimo funkcijos 1 būdui bei pritaikytos skaitymo ir rašymo funkcijos pagal konteinerius 
+* Vėliau padarytos abi rūšiacimo funkcijos 1 būdui bei pritaikytos skaitymo ir rašymo funkcijos pagal konteinerius
+**2020 11 29**
+* Viskas užbaigta. Tačiau yra problemų su setup failu. Nors ir viską suinstaliuoja puikiai, programa neveikia, nes nesukuriami/nerandami 1000.txt (ir t.t.) failai. Reikalinga gilesnė analizė.
