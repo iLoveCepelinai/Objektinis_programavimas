@@ -24,7 +24,6 @@ P.S pats kodas niekur nebuvo redagutas kuriant naujas šakas
 * [Programa v0.3](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.3)
 * [Programa v0.4](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.4)
 * [Programa v0.5](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_0.5)
-* [Programa v1.0](https://github.com/iLoveCepelinai/Objektinis_programavimas/tree/v_1.0)
 
 ## Taip pat naudinga:
 **Darbas buvo atliekamas naudojant "Visual Studio 2019"**
