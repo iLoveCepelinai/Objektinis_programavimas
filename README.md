@@ -6,7 +6,11 @@ Maišyti skirstymo į list/vector būdai
 * [CPP funkcijos: v1.0_bib.cpp](https://github.com/iLoveCepelinai/Objektinis_programavimas/blob/v_1.0/amsiejus_v1.0/v1.0_bib.cpp)
 ## Nuorodos į release'us
 * [1.0 release](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/v1.0)
+* [1.01 release (atnaujinta)](https://github.com/iLoveCepelinai/Objektinis_programavimas/releases/tag/v1.01)
 ## Naudojimosi instrukcija
+***Instrukcija buvo skirta prieš padarant v1.01 versiją, kurioje main.cpp faile yra visi konteinerių tipai ir rūšiavimo būdai***
+
+
 Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo metodą (mano versija). Todėl norint pakeisti į kitą skirstymo/konteinerių versiją reikia:
 
 ***a)Darant su vector, 1 būdas:***
@@ -66,7 +70,7 @@ Numatytoji (default) programos versija yra padaryta naudojant list 3 skirtymo me
   
 * Nieko daryti nereikia, nes čia numatytasis (default) būdas
 
-## Išvados
+## Išvados (senos, netikslios)
 Mano versijoje v1.0 buvo skirstoma 6 būdais: 4 iš jų duoti dėstytojo, 2 - mano pasirinkti ankstesnėse versijose (v0.4 ir v0.5). Mano būdai buvi grįsti pirma surūšiavimu pagal galutinį pažymį, paskui:
 * vektorių būdu: tie, kurie surinko >=5 yra kopijuojami nuo galo į sukciukai vektorių, o iš bendro (grupe) vektoriaus šalinami (pop)
 * list'ų būdu: atliekama splice funkcija, iškerpanti iš sąrašo grupe dundukus (<5) ir perkelianti į dundukai list'ą. Automatiškai list'e grupe lieka tik sukciukai (>=5)
@@ -81,6 +85,15 @@ Taigi, pagal laikus (žiūrėsiu tik į release x64 10 000 000 greičius, bet vi
 
 Buvau nustebintas, kad sąrašų trynimo būdas (2) buvo šiek tiek greitesnis už sąrašų dubliavimo (1) būdą. Taip pat galima matyti, kad rūšiuoti nei vektorių, nei listų neapsimoka, nors tai, atminties atžvilgiu, yra pats efektyviausias būdas.
 
+## Išvados (atnaujinta)
+Pagal 1 000 000 eilučių ir 5 namų darbų kiekį gauti skirstymo greičiai lėtėjimo tvarka (paveikslėlis OPP (objektinio programavimo paveiksliukai) aplanke):
+* vector pirmas būdas (~0.125s)
+* vector antras būdas (~0.152s)
+* list antras būdas (~0.273s)
+* list pirmas būdas (~0.294s)
+* vector mano būdas (~0.341s)
+* list mano būdas (~0.646s)
+
 ## Kompiuterio parametrai
 * Intel core i7-7700HQ
 * 8 GB RAM DDR4
@@ -92,3 +105,5 @@ Buvau nustebintas, kad sąrašų trynimo būdas (2) buvo šiek tiek greitesnis u
 * Vėliau padarytos abi rūšiacimo funkcijos 1 būdui bei pritaikytos skaitymo ir rašymo funkcijos pagal konteinerius
 **2020 11 29**
 * Viskas užbaigta. Tačiau yra problemų su setup failu. Nors ir viską suinstaliuoja puikiai, programa neveikia, nes nesukuriami/nerandami 1000.txt (ir t.t.) failai. Reikalinga gilesnė analizė.
+**2020 12 18**
+* Viskas sukelta į vieną main failą, kad būtų tikslesni skaičiavimai
